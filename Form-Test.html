@@ -31,6 +31,8 @@
   </style>
 </head>
 <body>
+  <!-- The method can be post or get. Get takes the data submitted through the form would get added to the URL for query search. Post adds data to database. -->
+  <!-- Name in purple is the reference when you try to retrieve that data. -->
   <form action="submit_form.php" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
@@ -39,7 +41,7 @@
     <input type="email" id="email" name="email" required>
 
     <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number here" required>
 
     <input type="submit" value="Submit">
   </form>
